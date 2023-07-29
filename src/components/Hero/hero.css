@@ -1,0 +1,84 @@
+.hero-wrapper{
+    color: white;
+    position: relative;
+}
+.hero-left{
+    gap: 2rem;
+}
+.hero-container{
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.hero-title>h1{
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 4rem;
+}
+.hero-dis{
+    margin-top: 1rem;
+}
+.search-bar{
+    background-color: white;
+    border-radius: 5px;
+    border: 3px solid rgba(120,120,120,0.374);
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.search-bar>input{
+    border: none;
+    outline: none;
+    margin-left: 2rem;
+}
+
+.search-bar>button{
+    margin-left: 3rem;
+}
+
+.stats{
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.stat>:nth-child(1){
+    font-size: 2rem;
+}
+.stat>:nth-child(1)>:last-child{
+    color:orange;
+}
+.image-container{
+    width: 20rem;
+    height: 25rem;
+    overflow: hidden;
+    border-radius: 15rem 15rem 0 0;
+    border:8px solid rgba(255, 255, 255, 0.441);
+}
+
+.image-container>img{
+    width:100%;
+    height:100%;
+}
+
+@media (max-width :640px){
+    .hero-container{
+        margin-top: 2rem;
+    }
+    .hero-title>h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .image-container{
+        width: 95%;
+        height: 25rem;
+    }
+    .stats{
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .hero-right{
+        width: 100%;
+    }
+}
